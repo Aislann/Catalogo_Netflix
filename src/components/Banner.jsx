@@ -40,13 +40,16 @@ function Banner() {
         <h1 className="banner-title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
-        <div className="banner-buttons-container">
-          <button className="banner-button">Assistir</button>
-          <button className="banner-button">Minha Lista</button>
-        </div>
         <div className="banner-description">
-          <h2>{truncate(movie?.overview, 150)}</h2>
+          <h2>{truncate(movie?.overview, 200)}</h2>
         </div>
+        <div className="banner-buttons-container">
+          <button className="banner-button">
+            <span>▶ Assistir</span>
+            </button>
+          <button className="banner-button2">
+            <span>(ℹ️) Mais Informações</span> </button>
+        </div> 
       </div>
     </header>
   );

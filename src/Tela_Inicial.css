@@ -1,0 +1,247 @@
+* {
+  letter-spacing: 0!important;
+}
+
+.profiles-gate-container {
+  background: #141414;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 0;
+}
+
+.profiles-gate-container .centered-div {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.profiles-gate-container .centered-div.list-profiles-container:not(.js-transition-node) {
+  animation: animateProfileGate .45s forwards;
+}
+
+body, html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #141414;
+  color: #fff;
+  cursor: default;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.netflix-sans-font-loaded {
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: sans-serif;
+}
+
+.list-profiles {
+  max-width: 80%;
+}
+
+.list-profiles .profile-gate-label {
+  color: #fff;
+  font-size: 3.5vw;
+  font-weight: unset;
+  width: 100%;
+}
+
+.list-profiles .choose-profile {
+  margin: 2em 0;
+}
+
+.list-profiles .choose-profile, .list-profiles .profile-gate-label {
+  opacity: 1;
+  transition: opacity .4s ease-out;
+}
+
+b, h1, h2, h3, h4, h5, h6, optgroup, strong {
+  font-weight: 500;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.list-profiles .choose-profile {
+  margin: 2em 0;
+}
+
+.list-profiles .choose-profile, .list-profiles .profile-gate-label {
+  opacity: 1;
+  transition: opacity .4s ease-out;
+}
+
+.profiles-gate-container ul {
+  padding: 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.profiles-gate-container li.profile {
+  max-width: 200px;
+  min-width: 84px;
+  width: 10vw;
+}
+
+.profiles-gate-container li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+div {
+  display: block;
+}
+
+.profiles-gate-container li a {
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+.list-profiles .avatar-wrapper {
+  position: relative;
+}
+
+element.style {
+  background-image: url(https://occ-0-3249-3851.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABfjwXqIYd3kCEU6KWsiHSHvkft8VhZg0yyD50a_pHXku4dz9VgxWwfA2ontwogStpj1NE9NJMt7sCpSKFEY2zmgqqQfcw1FMWwB9.png?r=229);
+}
+
+.profiles-gate-container .profile-icon {
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  position: relative;
+  text-decoration: none;
+  width: 10vw;
+}
+
+.profiles-gate-container .profile-name {
+  color: grey;
+  display: block;
+  font-size: 1.3vw;
+  line-height: 1.2em;
+  margin: .6em 0;
+  min-height: 1.8em;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.profiles-gate-container li {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.profiles-gate-container .addProfileIcon {
+  align-items: center;
+  color: grey;
+  display: flex;
+  font-size: 5vw;
+  height: 10vw;
+  justify-content: center;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  text-align: center;
+  text-decoration: none;
+  width: 10vw;
+}
+
+[class*=" icon-"], [class^=icon-] {
+  speak: none;
+  font-family: nf-icon;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;
+  transform: translateZ(0);
+}
+
+.profile-button {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  margin: 2em 0 1em;
+  padding: .5em 1.5em;
+}
+
+.profiles-gate-container li.profile:not(:last-child) {
+  margin: 0 2vw 0 0;
+}
+
+.netflix-sans-font-loaded {
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
+.icon-tvuiAdd:before {
+  content: "➕";
+}
+
