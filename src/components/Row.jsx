@@ -78,6 +78,11 @@ function Row({ title, path, isLarge }) {
           />
         ))}
       </div>
+      <div className="">
+        <div>
+
+        </div>
+      </div>
       {trailerUrl && <ReactPlayer url={trailerUrl} playing={true} />}
       <div className="arrow-container-right" onClick={() => handleScroll("right")}>
         ➡

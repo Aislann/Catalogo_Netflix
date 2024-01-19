@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import categories, { getMovies } from "../api";
 import "./Banner.css";
+import { InfoIcon } from "lucide-react";
+
 
 function Banner() {
   const [movie, setMovie] = React.useState({});
@@ -48,7 +50,8 @@ function Banner() {
             <span>▶ Assistir</span>
             </button>
           <button className="banner-button2">
-            <span>(ℹ️) Mais Informações</span> </button>
+           <span><InfoIcon className="style-icon"/> Mais Informações</span> 
+          </button>
         </div> 
       </div>
     </header>
