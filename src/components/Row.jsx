@@ -17,7 +17,8 @@ function Row({ title, path, isLarge }) {
     if (trailerUrl) {
       setTrailerUrl("");
     } else {
-      movieTrailer(movie.title || movie.name || movie.original_name || "")
+      const searchQuery = movie.title || movie.name || movie.original_name || "";
+      movieTrailer(searchQuery)
         .then((url) => {
           setTrailerUrl(url);
         })
@@ -26,11 +27,12 @@ function Row({ title, path, isLarge }) {
         });
     }
   };
+  
 
   const fetchMovies = async (_path) => {
     try {
       const data = await getMovies(_path);
-      console.log("data ", data);
+      console.log("Data for series:", data);
       setMovies(data?.results);
     } catch (error) {
       console.log("fetchMovies error: ", error);
@@ -67,6 +69,7 @@ function Row({ title, path, isLarge }) {
         onScroll={(e) => setScrollPosition(e.target.scrollLeft)}
       >
         {movies?.map((movie) => (
+          <>
           <img
             className={`movie-card ${isLarge && "movie-card-large"}`}
             onClick={() => handleOnClick(movie)}
@@ -76,7 +79,13 @@ function Row({ title, path, isLarge }) {
             }`}
             alt={movie.name}
           />
+          <img
+            className={`additional-div `}
+          />
+          
+          </>
         ))}
+  
       </div>
       <div className="">
         <div>

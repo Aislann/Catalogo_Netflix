@@ -2,9 +2,6 @@
   margin-left: 20px;
   color: white;
 
-  /* novo */
-  overflow-x: auto;
-  white-space: nowrap;
   position: relative;
 }
 
@@ -26,6 +23,7 @@
   max-height: 100px;
   margin-bottom: 10px;
   transition: transform 450ms;
+  
 }
 
 /* .movie-card:before {
@@ -49,6 +47,7 @@
   margin-right: 10px;
   transition: transform 450ms;
   border-radius: 1rem;
+  
 }
 
 .movie-card:hover {
@@ -57,29 +56,33 @@
 
 .row-header{
   margin-top: 1.5rem;
-  margin-left: 1rem;
-  font-size: 2.2rem;
-}
-
-.arrow-container {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  cursor: pointer;
-  /* Adicione estilos para a seta (pode ser um ícone ou um elemento visual) */
-  font-size: 24px;
-  color: white;
+  margin-left: 2rem;
+  display: block;
+  font-size: 2.7rem;
+  margin-block-start: 0.83em;
+  font-weight: 500; 
 }
 
 .arrow-container-left,
 .arrow-container-right {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
+  background: hsla(0,0%,8%,.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 53%;
+  width: 4%;
+  font-weight: 500;
+  font-size: 0; 
+  min-height: 75%;
+  transform: translateY(-50%);
+}
+.arrow-container-left:hover,
+.arrow-container-right:hover {
+  font-size: 3vw;
+  background: hsla(0,0%,8%,.5);
 }
 
 .arrow-container-left {
@@ -88,4 +91,18 @@
 
 .arrow-container-right {
   right: 0;
+}
+
+
+/* Estilo padrão da div adicional */
+.additional-div {
+  display: none; /* Inicialmente oculta */
+  position: absolute;
+  /* Adicione outros estilos conforme necessário */
+}
+
+/* Estilo quando a imagem é hover */
+.movie-card:hover + .additional-div {
+  display: block; /* Torna visível quando a imagem está em hover */
+  /* Adicione outros estilos conforme necessário */
 }

@@ -48,6 +48,7 @@
   margin-top: 10rem;
   min-width: 140px;
   min-height: 60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .banner-button2 {
@@ -56,11 +57,12 @@
   outline: none;
   border: none;
   border-radius: 6px;
-  background-color: rgba(109, 109, 110, 0.7);
+  background-color: rgba(109, 109, 110, 0.6);
   color: white;
   padding: 1.5rem;
   margin-top: 8rem;
   min-width: 140px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .banner-button span{
@@ -98,6 +100,13 @@
   background-color: #e6e6e6;
   transition: all 0.2s;
 }
+
+.banner-button2:hover {
+  color: white;
+  background-color: rgba(109, 109, 110, 0.8);
+  transition: all 0.2s;
+}
+
 
 .style-icon{
   width: 30px;
