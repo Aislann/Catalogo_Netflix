@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import categories, { getMovies } from "../api";
 import "./Banner.css";
 import { InfoIcon } from "lucide-react";
-
+import { Link } from "react-router-dom";
 
 function Banner() {
   const [movie, setMovie] = React.useState({});
@@ -50,7 +50,12 @@ function Banner() {
             <span>▶ Assistir</span>
             </button>
           <button className="banner-button2">
-           <span><InfoIcon className="style-icon"/> Mais Informações</span> 
+           <Link to={"/Mais_Informacoes"}>
+           <span>
+            <InfoIcon className="style-icon"/> Mais Informações </span>
+           </Link> 
+           
+           
           </button>
         </div> 
       </div>

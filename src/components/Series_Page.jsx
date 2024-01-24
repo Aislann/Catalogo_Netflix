@@ -2,7 +2,7 @@ import React from 'react';
 import "../App";
 import categories from '../api';
 import Nav from './Nav';
-import Row from './Row';
+import Filmes_Series from './Filmes_Series';
 
 const Series_Page = () => {
 
@@ -12,7 +12,7 @@ const Series_Page = () => {
       <Nav />
       {seriesCategories.map((category) => {
         return (
-          <Row
+          <Filmes_Series
           key={category.name}
           path={category.path}
           isLarge={category.isLarge}

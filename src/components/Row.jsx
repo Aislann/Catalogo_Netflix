@@ -3,6 +3,8 @@ import ReactPlayer from "react-player";
 import movieTrailer from "movie-trailer";
 import { getMovies } from "../api";
 import "./Row.css";
+import { MdOutlineArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const imageHost = "https://image.tmdb.org/t/p/original/";
 
@@ -32,7 +34,6 @@ function Row({ title, path, isLarge }) {
   const fetchMovies = async (_path) => {
     try {
       const data = await getMovies(_path);
-      console.log("Data for series:", data);
       setMovies(data?.results);
     } catch (error) {
       console.log("fetchMovies error: ", error);
@@ -60,7 +61,7 @@ function Row({ title, path, isLarge }) {
   return (
     <div className="row-container">
       <div className="arrow-container-left" onClick={() => handleScroll("left")}>
-        ⬅
+      <MdOutlineArrowBackIos />
       </div>
       <h2 className="row-header">{title}</h2>
       <div
@@ -70,6 +71,7 @@ function Row({ title, path, isLarge }) {
       >
         {movies?.map((movie) => (
           <>
+          <Link to={'/movie/:id'}>
           <img
             className={`movie-card ${isLarge && "movie-card-large"}`}
             onClick={() => handleOnClick(movie)}
@@ -77,11 +79,9 @@ function Row({ title, path, isLarge }) {
             src={`${imageHost}${
               isLarge ? movie.backdrop_path : movie.poster_path
             }`}
-            alt={movie.name}
-          />
-          <img
-            className={`additional-div `}
-          />
+            alt={movie.name}>
+          </img>
+          </Link>
           
           </>
         ))}
@@ -93,8 +93,9 @@ function Row({ title, path, isLarge }) {
         </div>
       </div>
       {trailerUrl && <ReactPlayer url={trailerUrl} playing={true} />}
+
       <div className="arrow-container-right" onClick={() => handleScroll("right")}>
-        ➡
+      <MdArrowForwardIos />
       </div>
     </div>
   );

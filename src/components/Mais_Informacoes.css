@@ -1,0 +1,67 @@
+.banner-content-tela {
+    margin-left: 60px;
+    padding-top: 300px;
+    height: 650px;
+}
+
+.banner-title-tela {
+    margin-top: 13rem;
+    font-size: 6rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    transform-origin: bottom left;
+    color: white;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.banner-description-tela {
+    width: 80rem;
+    line-height: 1.5;
+    font-size: 0.7vw;
+    font-weight: 400;
+    min-height: 90px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.banner-buttons-container-tela {
+    display: flex;
+    align-items: center;
+    margin-top: -8rem;
+}
+
+.banner-button-tela {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    margin-top: 10rem;
+    min-width: 140px;
+    min-height: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 32rem;
+}
+
+.banner-button-tela span {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+}
+
+
+
+.banner-button-tela:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}

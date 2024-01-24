@@ -1,7 +1,6 @@
 .row-container {
   margin-left: 20px;
   color: white;
-
   position: relative;
 }
 
@@ -10,7 +9,6 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
-  
 }
 
 .row-cards::-webkit-scrollbar {
@@ -26,32 +24,19 @@
   
 }
 
-/* .movie-card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color:  #000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 30px;
-} */
-
 .movie-card-large {
   object-fit: contain;
   width: 100%;
   max-height: 220px;
   margin-bottom: 10px;
   margin-right: 10px;
-  transition: transform 450ms;
-  border-radius: 1rem;
+  transition: transform 550ms;
+  border-radius: 1.5rem;
   
 }
 
 .movie-card:hover {
-  transform: scale(1.08);
+  transform: scale(1.2);
 }
 
 .row-header{
@@ -94,15 +79,3 @@
 }
 
 
-/* Estilo padrão da div adicional */
-.additional-div {
-  display: none; /* Inicialmente oculta */
-  position: absolute;
-  /* Adicione outros estilos conforme necessário */
-}
-
-/* Estilo quando a imagem é hover */
-.movie-card:hover + .additional-div {
-  display: block; /* Torna visível quando a imagem está em hover */
-  /* Adicione outros estilos conforme necessário */
-}

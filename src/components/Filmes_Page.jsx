@@ -1,14 +1,9 @@
-// import React from 'react'
-// import "../App";
-// import Row from './Row';
-// import categories from '../api';
-// import Nav from './Nav';
-
 import React from 'react';
 import "../App";
 import categories from '../api';
 import Nav from './Nav';
-import Row from './Row';
+import Filmes_Series from './Filmes_Series';
+import "./Filmes_Series.css"
 
 const Filmes_Page = () => {
 
@@ -18,7 +13,7 @@ const Filmes_Page = () => {
       <Nav />
       {filmesCategories.map((category) => {
         return (
-          <Row
+          <Filmes_Series
             key={category.movie}
             path={category.path}
             isLarge={category.isLarge}
