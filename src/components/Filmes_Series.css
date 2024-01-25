@@ -13,8 +13,6 @@
   display: none;
 }
   
-
-/* outros  */
 .row-container-outros {
   color: white;
   position: relative;
@@ -39,5 +37,5 @@
 }
 
 .movie-card-outros:hover {
-  transform: scale(1.08);
+  transform: scale(1.2);
 }

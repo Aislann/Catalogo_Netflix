@@ -16,7 +16,7 @@ export default function routes() {
                 <Route exect path = '/Filmes_Page' Component={Filmes_Page}/>
                 <Route exect path = '/Series_Page' Component={Series_Page}/>
                 <Route exect path = '/Mais_Informacoes' Component={Mais_Informacoes}/>
-                <Route exect path = '/movie/:id' Component={Video}/>
+                {/* <Route exect path = '/movie/:id' Component={Video}/> */}
             </Routes>
         </BrowserRouter>
     )
