@@ -211,7 +211,6 @@ element.style {
 }
 
 [class*=" icon-"], [class^=icon-] {
-  speak: none;
   font-family: nf-icon;
   font-style: normal;
   font-variant: normal;
@@ -244,4 +243,6 @@ element.style {
 .icon-tvuiAdd:before {
   content: "➕";
 }
+
+
 

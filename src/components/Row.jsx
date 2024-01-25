@@ -71,7 +71,7 @@ function Row({ title, path, isLarge }) {
       >
         {movies?.map((movie) => (
           <>
-          <Link to={'/movie/:id'}>
+          {/* <Link to={'/movie/:id'}> */}
           <img
             className={`movie-card ${isLarge && "movie-card-large"}`}
             onClick={() => handleOnClick(movie)}
@@ -81,7 +81,7 @@ function Row({ title, path, isLarge }) {
             }`}
             alt={movie.name}>
           </img>
-          </Link>
+          {/* </Link> */}
           
           </>
         ))}
